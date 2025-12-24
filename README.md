@@ -53,8 +53,7 @@ All backtests incorporate realistic execution modelling:
 
 ---
 
-## Additional details
-**Purged Time-Series Cross Validation**
+## Purged Time-Series Cross Validation
 A time-series cross-validation method that:
 - Removes training rows that are too close before a test block
 - Excludes a small window after the test.

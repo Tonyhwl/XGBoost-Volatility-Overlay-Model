@@ -20,13 +20,6 @@
 - Powerful and efficient gradient-boosting library
 - Handles tabular data well (like financial time series)
 - Offers flexibility with hyperparameter tuning
-
-How do gradient-boosting trees work?
-- Start with a simple baseline prediction
-- Measure errors on training data (squared error for regression)
-- Add that tree to the model with a small weight
-- Repeat for many trees, each correcting previous errors
-
 Since we have 6+ years of historical data for Bitcoin, XGBoost is my chosen model for this strategy.
 
 ---
@@ -59,4 +52,7 @@ All backtests incorporate realistic execution modelling:
 - Sensitivity checks across cost, impact and deadband parameters
 
 ---
+
+## Additional details
+
 

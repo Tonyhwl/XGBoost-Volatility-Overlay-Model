@@ -54,5 +54,18 @@ All backtests incorporate realistic execution modelling:
 ---
 
 ## Additional details
+**Purged Time-Series Cross Validation**
+A time-series cross-validation method that:
+- Removes training rows that are too close before a test block
+- Excludes a small window after the test.
+
+Why do we use this CV?
+- When we use future data (e.g multi-day returns), nearby target days can overlap with test target windows and leak information
+- Purging/Embargo prevents leakage so CV scores reflect true OOS performance
+
+How does it work?
+- Define test block
+- Compute when purge starts and when embargo ends
+- Remove any training indices in [purge_start, embargo_end]
 
 
